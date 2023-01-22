@@ -3,10 +3,8 @@ use http_auth_basic::Credentials;
 extern crate core;
 use std::{env, process};
 use std::time::Duration;
-use auth_headers::AuthorizationHeader;
 use tokio;
 use reqwest::ClientBuilder;
-use reqwest::header::AUTHORIZATION;
 
 #[tokio::main]
 async fn main() {
