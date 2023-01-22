@@ -3,9 +3,12 @@
 
     sends GET to specified url and checks the response body for a specified keyword (Nagios compatible)
 
-    Format: ./check_site_for_keyword $url$ $keyword$
+    Format;
+    ./check_site **%username% **%password% %url% %keyword%
 
-    note: installable as Nagios plugin
+    note:
+    installable as Nagios plugin
+    use environment variables to pass credentials
 
 ### One-line Nagios Plugin Install
 builds in /tmp and copies bin to /usr/local/nagios/libexec/
