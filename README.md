@@ -1,4 +1,4 @@
-# check_site_for_keyword
+# nagios_check_site_content
     Nagios plugin written in Rust, used to check website for specified content.
 
     sends GET to specified url and checks the response body for a specified keyword (Nagios compatible)
