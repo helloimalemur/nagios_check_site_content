@@ -10,7 +10,7 @@
 ### One-line Nagios Plugin Install
 builds in /tmp and copies bin to /usr/local/nagios/libexec/
 ```agsl
-curl -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/helloimalemur/nagios_check_site_content/main/src/install_as_nagios_plugin.sh | sh
+curl -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/helloimalemur/nagios_check_site_content/master/src/install_as_nagios_plugin.sh | sh
 ```
 
 ### Normal build
