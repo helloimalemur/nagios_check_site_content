@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -f /usr/local/nagios/libexec/check_disk ]]; then
-  #  rm -rf /tmp/notify_via_discord/ 2>/dev/null;
+    rm -rf /tmp/nagios_check_site_content/ 2>/dev/null;
     cd /tmp/;
     git clone https://github.com/helloimalemur/nagios_check_site_content.git;
     cd nagios_check_site_content/;
