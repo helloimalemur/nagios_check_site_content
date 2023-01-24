@@ -7,7 +7,7 @@ if [[ -f /usr/local/nagios/libexec/check_disk ]]; then
     cd nagios_check_site_content/;
     cargo build;
     cp target/debug/check_site /usr/local/nagios/libexec/;
-    cp src/examples/check_elasticsearch.sh /usr/local/nagios/libexec/;
+    cp src/examples/check_elastic.sh /usr/local/nagios/libexec/;
     cp src/examples/check_kibana.sh /usr/local/nagios/libexec/;
     chmod +x /usr/local/nagios/libexec/*.sh;
 else
