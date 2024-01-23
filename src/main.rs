@@ -52,7 +52,7 @@ async fn main() {
 pub async fn fetch(url: &str, keyword: &str, auth_token: &str) {
     //set headers
     let mut headers = reqwest::header::HeaderMap::new();
-    headers.insert(http::header::AUTHORIZATION, auth_token.parse().unwrap());
+    headers.insert("Authorization", auth_token.parse().unwrap());
     // let auth = AuthorizationHeader::try_from(&headers).unwrap();
     // ignore invalid certs since we may be checking self-signed
     let client = ClientBuilder::new()
@@ -93,6 +93,7 @@ fn success() {
 }
 fn failure() {
     println!("{} {} {}", "connection failed", "|", "CRITICAL");
+
     process::exit(2)
 }
 fn no_arg_error() {
